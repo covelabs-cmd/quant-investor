@@ -1,42 +1,42 @@
-# Research Toolkit Template
+# Quant Investor
 
-Research Toolkit Template is a lightweight open-source project template for organizing reproducible research, data analysis, and experimental workflows.
+Quant Investor is a lightweight open-source toolkit for organizing reproducible quantitative research, data analysis, and experimental workflows.
 
-This repository is designed for researchers, students, and independent developers who want a clean starting point for structuring small research-oriented coding projects.
+This repository is designed for researchers, students, and independent developers who want a clean starting point for structuring research-oriented Python projects.
 
 ## Motivation
 
-Many research projects start as informal scripts, notebooks, and scattered files. As a project grows, it becomes harder to reproduce results, track assumptions, organize data, and document the workflow.
+Many quantitative research projects start as informal scripts, notebooks, and scattered files. As a project grows, it becomes harder to reproduce results, track assumptions, organize data, and document the workflow.
 
-This template provides a simple project structure that can be reused across different research topics without depending on any private data, proprietary code, or project-specific logic.
+Quant Investor provides a simple project structure and small utility modules that can be reused across different research topics without depending on private data, proprietary code, or project-specific logic.
 
 ## Features
 
 - Simple folder structure for research projects
-- Example documentation layout
-- Placeholder structure for scripts and notebooks
-- Reproducible workflow organization
+- Lightweight Python utilities
+- Experiment logging helper
+- Reproducibility checklist generator
+- Documentation-friendly layout
 - Open-source friendly project setup
 - Minimal and easy to modify
 
 ## Project Structure
 
-research-toolkit-template/
+quant-investor/
 - README.md
 - LICENSE
-- docs/
-  - roadmap.md
-- examples/
-  - example_workflow.md
+- roadmap.md
+- workflow.md
 - src/
   - research_toolkit/
     - __init__.py
-- tests/
-  - README.md
+    - config.py
+    - experiment_log.py
+    - checklist.py
 
 ## Use Cases
 
-This template can be used for:
+This toolkit can be used for:
 
 - Academic research projects
 - Quantitative research experiments
@@ -49,25 +49,38 @@ This template can be used for:
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/research-toolkit-template.git
+git clone https://github.com/covelabs-cmd/quant-investor.git
 
 Move into the project directory:
 
-cd research-toolkit-template
+cd quant-investor
 
-Create your own project folders:
+Create basic project folders:
 
-mkdir data notebooks outputs
+python -m src.research_toolkit.config
 
 You can then add your own scripts, notebooks, documentation, and experiments.
 
+## Modules
+
+config.py
+
+Creates and describes a simple research project folder structure.
+
+experiment_log.py
+
+Provides a lightweight CSV-based experiment logging utility.
+
+checklist.py
+
+Generates a reproducibility checklist in markdown format.
+
 ## Documentation
 
-Documentation can be added under the docs directory.
+Documentation can be added through markdown files such as:
 
-Suggested documentation files:
-
-- docs/roadmap.md
+- roadmap.md
+- workflow.md
 - docs/methodology.md
 - docs/data_sources.md
 - docs/experiment_log.md
@@ -76,12 +89,12 @@ Suggested documentation files:
 
 Planned improvements:
 
-- Add example research workflow
-- Add basic Python package structure
-- Add testing examples
-- Add documentation templates
-- Add reproducibility checklist
-- Add example configuration files
+- Add more example research workflows
+- Add configuration templates
+- Add basic testing examples
+- Add data documentation templates
+- Add reproducibility guidelines
+- Prepare a first release
 
 ## Contributing
 
