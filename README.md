@@ -21,16 +21,80 @@ This template provides a simple project structure that can be reused across diff
 
 ## Project Structure
 
-```text
 research-toolkit-template/
-├── README.md
-├── LICENSE
-├── docs/
-│   └── roadmap.md
-├── examples/
-│   └── example_workflow.md
-├── src/
-│   └── research_toolkit/
-│       └── __init__.py
-└── tests/
-    └── README.md
+- README.md
+- LICENSE
+- docs/
+  - roadmap.md
+- examples/
+  - example_workflow.md
+- src/
+  - research_toolkit/
+    - __init__.py
+- tests/
+  - README.md
+
+## Use Cases
+
+This template can be used for:
+
+- Academic research projects
+- Quantitative research experiments
+- Data analysis workflows
+- Backtesting prototypes
+- Reproducible notebooks
+- Small open-source research tools
+
+## Getting Started
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/research-toolkit-template.git
+
+Move into the project directory:
+
+cd research-toolkit-template
+
+Create your own project folders:
+
+mkdir data notebooks outputs
+
+You can then add your own scripts, notebooks, documentation, and experiments.
+
+## Documentation
+
+Documentation can be added under the docs directory.
+
+Suggested documentation files:
+
+- docs/roadmap.md
+- docs/methodology.md
+- docs/data_sources.md
+- docs/experiment_log.md
+
+## Roadmap
+
+Planned improvements:
+
+- Add example research workflow
+- Add basic Python package structure
+- Add testing examples
+- Add documentation templates
+- Add reproducibility checklist
+- Add example configuration files
+
+## Contributing
+
+Contributions are welcome.
+
+You can contribute by:
+
+- Improving documentation
+- Suggesting a cleaner project structure
+- Adding example workflows
+- Adding reproducibility checklists
+- Reporting issues
+
+## License
+
+This project is released under the MIT License.
