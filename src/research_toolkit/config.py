@@ -56,6 +56,17 @@ def ensure_project_folders(root: Path | None = None) -> list[Path]:
 def describe_project_structure(root: Path | None = None) -> dict[str, str]:
     """
     Return a simple description of the expected project folders.
+
+    Parameters
+    ----------
+    root:
+        Optional project root directory. If not provided, the current working
+        directory is used.
+
+    Returns
+    -------
+    dict[str, str]
+        Dictionary describing the project structure.
     """
     project_root = root or get_project_root()
 
@@ -71,6 +82,7 @@ def describe_project_structure(root: Path | None = None) -> dict[str, str]:
 
 if __name__ == "__main__":
     folders = ensure_project_folders()
+
     print("Project folders are ready:")
     for folder in folders:
         print(f"- {folder}")
